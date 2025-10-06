@@ -3,7 +3,7 @@ import { IoStarHalfOutline } from "react-icons/io5";
 import { Link } from "react-router";
 
 const Book = ({ book }) => {
-  console.log(book);
+  // console.log(book);
   const { bookName, author, image, category, publisher, rating, bookId } = book;
   return (
     <Link to={`/bookDetails/${bookId}`}>
