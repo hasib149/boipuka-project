@@ -7,18 +7,17 @@ const BooksDetails = () => {
   const data = useLoaderData();
   const singleBook = data.find((book) => book.bookId === bookId);
   console.log(singleBook);
-  const { bookName, author, image, category, review, publisher, rating } =
-    singleBook;
+  const { bookName, image, review } = singleBook;
 
   //   console.log(data);
   //   console.log(id);
   return (
-    <div className="card lg:card-side bg-white shadow-lg rounded-2xl overflow-hidden max-w-4xl mx-auto flex flex-col lg:flex-row">
-      <figure className="w-full lg:w-1/3 h-64 lg:h-auto overflow-hidden bg-gray-200 p-4 lg:p-0 flex-shrink-0">
+    <div className="mt-16 mb-16 card lg:card-side bg-gray-100 shadow-lg rounded-2xl overflow-hidden max-w-4xl mx-auto flex flex-col lg:flex-row">
+      <figure className="w-full lg:w-1/3 h-64 lg:h-auto overflow-hidden   p-20 lg:p-0 flex-shrink-0">
         <img
           src={image}
           alt="Album"
-          className="w-full h-full object-cover rounded-2xl"
+          className="w-full h-full p-10 rounded-3xl"
         />
       </figure>
 
